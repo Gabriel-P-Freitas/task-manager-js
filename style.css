@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg,
+            rgba(65, 184, 131, 1) 0%,
+            rgba(0, 212, 255, 1) 100%);
+    ;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+
+}
+
+button,
+input {
+    display: inline-block;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+    padding: 24px 32px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    margin: auto;
+    background-color: transparent;
+}
+
+.btn-primary {
+    padding: 8px 16px;
+    background-color: #41b883;
+    border-radius: 6px;
+    color: white;
+}
+
+input.btn-submit {
+    border: none !important;
+}
+
+.trash {
+    padding: 8px;
+    font-size: 18px;
+}
+
+.new-task-section,
+.list-task-section {
+    display: flex;
+    background-color: aliceblue;
+    padding: 24px 12px;
+    border-radius: 6px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.new-task-section {
+    column-gap: 12px;
+}
+
+.list-task-section {
+    flex-direction: column;
+}
+
+.item-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .875rem;
+}
+
+.new-task-section input.input-task {
+    padding: 4px 6px;
+    color: #333;
+    border-radius: 4px;
+    border: 1px solid #d1d1d1;
+}
+
+.new-task-section .input-task:focus {
+    outline: none;
+    border-color: #41b883;
+
+}
+
+/* ALerts */
+.error {
+    border: 2px solid red !important;
+}
+
+.error::placeholder {
+    color: red;
+}
+
+.completed {
+    text-decoration: line-through;
+}
